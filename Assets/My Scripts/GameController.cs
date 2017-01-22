@@ -94,8 +94,5 @@ public class GameController : MonoBehaviour
 
 		Color c = GUI.backgroundColor;
 		GUI.backgroundColor = Color.clear;
-
-
-
 	}
 }

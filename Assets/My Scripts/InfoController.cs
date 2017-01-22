@@ -9,6 +9,8 @@ public class InfoController : MonoBehaviour {
 	string sitioRafa="rafeo.blogspot.com";
 	string nombreJuan="Juan Pablo Cañez";
 	string sitioJuan="";
+	string nombreRafita="Ráffukc Zeta";
+	string sitioRafita="fb.com/zmultimediaOficial";
 	public void IrAIntro()
 	{
 		Application.LoadLevel("Intro");
@@ -71,10 +73,24 @@ public class InfoController : MonoBehaviour {
 			0.9f);
 
 		AdvancedTextRendering.DrawOutline(new Rect(margenIzquierdo,margenCentro+240,100,100), 
-			sitioJuan, 
+			"Music:", 
 			style,
 			Color.black,
-			Color.red,
+			Color.magenta,
+			0.9f);
+
+		AdvancedTextRendering.DrawOutline(new Rect(margenIzquierdo,margenCentro+280,100,100), 
+			nombreRafita, 
+			style,
+			Color.black,
+			Color.magenta,
+			0.9f);
+
+		AdvancedTextRendering.DrawOutline(new Rect(margenIzquierdo,margenCentro+320,100,100), 
+			sitioRafita, 
+			style,
+			Color.black,
+			Color.magenta,
 			0.9f);
 
 		Color c = GUI.backgroundColor;
